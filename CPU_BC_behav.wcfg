@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="CPU_BC_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="CPU_BC" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="51265fs"></ZoomEndTime>
+      <Cursor1Time time="6535fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="121"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="69" />
+   <wvobject fp_name="/CPU_BC/PC" type="array">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/branch" type="logic">
+      <obj_property name="ElementShortName">branch</obj_property>
+      <obj_property name="ObjectShortName">branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/branch_W" type="logic">
+      <obj_property name="ElementShortName">branch_W</obj_property>
+      <obj_property name="ObjectShortName">branch_W</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/Aluout" type="array">
+      <obj_property name="ElementShortName">Aluout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Aluout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/CMPout" type="array">
+      <obj_property name="ElementShortName">CMPout[1:0]</obj_property>
+      <obj_property name="ObjectShortName">CMPout[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/instruct" type="array">
+      <obj_property name="ElementShortName">instruct[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruct[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/rs1" type="array">
+      <obj_property name="ElementShortName">rs1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/rs2" type="array">
+      <obj_property name="ElementShortName">rs2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/rd" type="array">
+      <obj_property name="ElementShortName">rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/funct3" type="array">
+      <obj_property name="ElementShortName">funct3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">funct3[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/funct7" type="array">
+      <obj_property name="ElementShortName">funct7[6:0]</obj_property>
+      <obj_property name="ObjectShortName">funct7[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/next_PC" type="array">
+      <obj_property name="ElementShortName">next_PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">next_PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/rd1" type="array">
+      <obj_property name="ElementShortName">rd1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/rd2" type="array">
+      <obj_property name="ElementShortName">rd2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/imm" type="array">
+      <obj_property name="ElementShortName">imm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">imm[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/Reg_Src" type="array">
+      <obj_property name="ElementShortName">Reg_Src[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Reg_Src[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/Sign" type="logic">
+      <obj_property name="ElementShortName">Sign</obj_property>
+      <obj_property name="ObjectShortName">Sign</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/ALuop" type="array">
+      <obj_property name="ElementShortName">ALuop[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALuop[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/ALU_Src1" type="logic">
+      <obj_property name="ElementShortName">ALU_Src1</obj_property>
+      <obj_property name="ObjectShortName">ALU_Src1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/ALU_Src2" type="logic">
+      <obj_property name="ElementShortName">ALU_Src2</obj_property>
+      <obj_property name="ObjectShortName">ALU_Src2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/CmpSrc2" type="logic">
+      <obj_property name="ElementShortName">CmpSrc2</obj_property>
+      <obj_property name="ObjectShortName">CmpSrc2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/Data_W" type="logic">
+      <obj_property name="ElementShortName">Data_W</obj_property>
+      <obj_property name="ObjectShortName">Data_W</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/Data_Byte" type="array">
+      <obj_property name="ElementShortName">Data_Byte[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_Byte[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/DataOut" type="array">
+      <obj_property name="ElementShortName">DataOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/EXEdebug" type="array">
+      <obj_property name="ElementShortName">EXEdebug[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EXEdebug[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/WB_OUT_W" type="array">
+      <obj_property name="ElementShortName">WB_OUT_W[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WB_OUT_W[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/WB_OUT" type="array">
+      <obj_property name="ElementShortName">WB_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WB_OUT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/PcControl" type="logic">
+      <obj_property name="ElementShortName">PcControl</obj_property>
+      <obj_property name="ObjectShortName">PcControl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/Reg_IF" type="array">
+      <obj_property name="ElementShortName">Reg_IF[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Reg_IF[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/Reg_ID" type="array">
+      <obj_property name="ElementShortName">Reg_ID[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Reg_ID[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/Reg_EXE" type="array">
+      <obj_property name="ElementShortName">Reg_EXE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Reg_EXE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/Reg_MEM" type="array">
+      <obj_property name="ElementShortName">Reg_MEM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Reg_MEM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/Reg_W" type="logic">
+      <obj_property name="ElementShortName">Reg_W</obj_property>
+      <obj_property name="ObjectShortName">Reg_W</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/Reg_WB" type="logic">
+      <obj_property name="ElementShortName">Reg_WB</obj_property>
+      <obj_property name="ObjectShortName">Reg_WB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/state" type="array">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug1" type="array">
+      <obj_property name="ElementShortName">debug1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug2" type="array">
+      <obj_property name="ElementShortName">debug2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug3" type="array">
+      <obj_property name="ElementShortName">debug3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug4" type="array">
+      <obj_property name="ElementShortName">debug4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug5" type="array">
+      <obj_property name="ElementShortName">debug5[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug5[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug6" type="array">
+      <obj_property name="ElementShortName">debug6[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug6[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug7" type="array">
+      <obj_property name="ElementShortName">debug7[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug7[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug8" type="array">
+      <obj_property name="ElementShortName">debug8[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug8[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug9" type="array">
+      <obj_property name="ElementShortName">debug9[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug9[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug10" type="array">
+      <obj_property name="ElementShortName">debug10[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug10[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug11" type="array">
+      <obj_property name="ElementShortName">debug11[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug11[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug12" type="array">
+      <obj_property name="ElementShortName">debug12[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug12[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug13" type="array">
+      <obj_property name="ElementShortName">debug13[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug13[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug14" type="array">
+      <obj_property name="ElementShortName">debug14[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug14[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug15" type="array">
+      <obj_property name="ElementShortName">debug15[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug15[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug16" type="array">
+      <obj_property name="ElementShortName">debug16[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug16[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug17" type="array">
+      <obj_property name="ElementShortName">debug17[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug17[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug18" type="array">
+      <obj_property name="ElementShortName">debug18[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug18[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug19" type="array">
+      <obj_property name="ElementShortName">debug19[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug19[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug20" type="array">
+      <obj_property name="ElementShortName">debug20[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug20[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug21" type="array">
+      <obj_property name="ElementShortName">debug21[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug21[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug22" type="array">
+      <obj_property name="ElementShortName">debug22[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug22[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug23" type="array">
+      <obj_property name="ElementShortName">debug23[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug23[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug24" type="array">
+      <obj_property name="ElementShortName">debug24[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug24[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug25" type="array">
+      <obj_property name="ElementShortName">debug25[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug25[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug26" type="array">
+      <obj_property name="ElementShortName">debug26[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug26[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug27" type="array">
+      <obj_property name="ElementShortName">debug27[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug27[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug28" type="array">
+      <obj_property name="ElementShortName">debug28[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug28[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug29" type="array">
+      <obj_property name="ElementShortName">debug29[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug29[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug30" type="array">
+      <obj_property name="ElementShortName">debug30[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug30[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug31" type="array">
+      <obj_property name="ElementShortName">debug31[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug31[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BC/debug32" type="array">
+      <obj_property name="ElementShortName">debug32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug32[31:0]</obj_property>
+   </wvobject>
+</wave_config>

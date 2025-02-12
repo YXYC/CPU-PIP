@@ -1,0 +1,1961 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May 24 17:22:32 2023
+# Process ID: 18664
+# Current directory: D:/work-CPU/CPU-PIP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21944 D:\work-CPU\CPU-PIP\CPU-PIP.xpr
+# Log file: D:/work-CPU/CPU-PIP/vivado.log
+# Journal file: D:/work-CPU/CPU-PIP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/work-CPU/CPU-PIP/CPU-PIP.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_BC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Instructs.coe'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_BC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/Branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DateMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/EXE_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/IF_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ImmGEN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGEN
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/InsMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/WB_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/CPU_BC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_BC
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xelab -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 3 for port 'branch' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:99]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 3 for port 'branch' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:142]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'funct3' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:91]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'funct7' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:92]
+WARNING: [VRFC 10-3091] actual bit length 30 differs from formal bit length 20 for port 'addra' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v:49]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="v...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.InsMEM
+Compiling module xil_defaultlib.IF_Unit
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.ImmGEN
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ID_Unit
+Compiling module xil_defaultlib.MUX_ALU_SRC_1
+Compiling module xil_defaultlib.MUX_ALU_SRC_2
+Compiling module xil_defaultlib.CMP_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CMP
+Compiling module xil_defaultlib.EXE_Unit
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_ELABORATION...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.DateMEM
+Compiling module xil_defaultlib.WB_MUX
+Compiling module xil_defaultlib.CPU_top
+Compiling module xil_defaultlib.CPU_BC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_BC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_BC_behav -key {Behavioral:sim_1:Functional:CPU_BC} -tclbatch {CPU_BC.tcl} -view {D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg
+source CPU_BC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 3000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Block Memory Generator module CPU_BC.uut.MEM.RAM.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 991.758 ; gain = 16.004
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_BC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 3000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 991.758 ; gain = 31.621
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/branch_bc.v w ]
+add_files -fileset sim_1 D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/branch_bc.v
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_BC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Instructs.coe'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_BC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/Branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DateMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/EXE_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/IF_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ImmGEN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGEN
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/InsMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/WB_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/CPU_BC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_BC
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xelab -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 3 for port 'branch' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/CPU_BC.v:101]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'funct3' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:91]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'funct7' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:92]
+WARNING: [VRFC 10-3091] actual bit length 30 differs from formal bit length 20 for port 'addra' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v:49]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="v...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.InsMEM
+Compiling module xil_defaultlib.IF_Unit
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.ImmGEN
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ID_Unit
+Compiling module xil_defaultlib.MUX_ALU_SRC_1
+Compiling module xil_defaultlib.MUX_ALU_SRC_2
+Compiling module xil_defaultlib.CMP_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CMP
+Compiling module xil_defaultlib.EXE_Unit
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_ELABORATION...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.DateMEM
+Compiling module xil_defaultlib.WB_MUX
+Compiling module xil_defaultlib.CPU_top
+Compiling module xil_defaultlib.CPU_BC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_BC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_BC_behav -key {Behavioral:sim_1:Functional:CPU_BC} -tclbatch {CPU_BC.tcl} -view {D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg
+source CPU_BC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 3000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Block Memory Generator module CPU_BC.uut.MEM.RAM.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1207.438 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_BC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 3000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1207.438 ; gain = 0.000
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_BC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Instructs.coe'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_BC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/Branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DateMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/EXE_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/IF_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ImmGEN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGEN
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/InsMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/WB_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/CPU_BC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_BC
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xelab -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 3 for port 'branch' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/CPU_BC.v:101]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'funct3' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:91]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'funct7' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:92]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="v...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.InsMEM
+Compiling module xil_defaultlib.IF_Unit
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.ImmGEN
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ID_Unit
+Compiling module xil_defaultlib.MUX_ALU_SRC_1
+Compiling module xil_defaultlib.MUX_ALU_SRC_2
+Compiling module xil_defaultlib.CMP_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CMP
+Compiling module xil_defaultlib.EXE_Unit
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_ELABORATION...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.DateMEM
+Compiling module xil_defaultlib.WB_MUX
+Compiling module xil_defaultlib.CPU_top
+Compiling module xil_defaultlib.CPU_BC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_BC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_BC_behav -key {Behavioral:sim_1:Functional:CPU_BC} -tclbatch {CPU_BC.tcl} -view {D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg
+source CPU_BC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 3000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Block Memory Generator module CPU_BC.uut.MEM.RAM.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1743.160 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_BC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 3000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1743.160 ; gain = 0.000
+set_property top MEM_bc [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'MEM_bc' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Instructs.coe'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MEM_bc_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DateMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/MEM_bc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_bc
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xelab -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MEM_bc_behav xil_defaultlib.MEM_bc xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MEM_bc_behav xil_defaultlib.MEM_bc xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_ELABORATION...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.DateMEM
+Compiling module xil_defaultlib.MEM_bc
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MEM_bc_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MEM_bc_behav -key {Behavioral:sim_1:Functional:MEM_bc} -tclbatch {MEM_bc.tcl} -view {D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg
+WARNING: Simulation object /CPU_BC/reset was not found in the design.
+WARNING: Simulation object /CPU_BC/clk was not found in the design.
+WARNING: Simulation object /CPU_BC/PC was not found in the design.
+WARNING: Simulation object /CPU_BC/PcControl was not found in the design.
+WARNING: Simulation object /CPU_BC/instruct was not found in the design.
+WARNING: Simulation object /CPU_BC/branch was not found in the design.
+WARNING: Simulation object /CPU_BC/branch_W was not found in the design.
+WARNING: Simulation object /CPU_BC/Aluout was not found in the design.
+WARNING: Simulation object /CPU_BC/CMPout was not found in the design.
+WARNING: Simulation object /CPU_BC/opcode was not found in the design.
+WARNING: Simulation object /CPU_BC/rs1 was not found in the design.
+WARNING: Simulation object /CPU_BC/rs2 was not found in the design.
+WARNING: Simulation object /CPU_BC/rd was not found in the design.
+WARNING: Simulation object /CPU_BC/funct3 was not found in the design.
+WARNING: Simulation object /CPU_BC/funct7 was not found in the design.
+WARNING: Simulation object /CPU_BC/next_PC was not found in the design.
+WARNING: Simulation object /CPU_BC/WB_OUT was not found in the design.
+WARNING: Simulation object /CPU_BC/rd1 was not found in the design.
+WARNING: Simulation object /CPU_BC/rd2 was not found in the design.
+WARNING: Simulation object /CPU_BC/imm was not found in the design.
+WARNING: Simulation object /CPU_BC/Reg_Src was not found in the design.
+WARNING: Simulation object /CPU_BC/Sign was not found in the design.
+WARNING: Simulation object /CPU_BC/ALuop was not found in the design.
+WARNING: Simulation object /CPU_BC/ALU_Src1 was not found in the design.
+WARNING: Simulation object /CPU_BC/ALU_Src2 was not found in the design.
+WARNING: Simulation object /CPU_BC/CmpSrc2 was not found in the design.
+WARNING: Simulation object /CPU_BC/Data_W was not found in the design.
+WARNING: Simulation object /CPU_BC/Data_Byte was not found in the design.
+WARNING: Simulation object /CPU_BC/DataOut was not found in the design.
+WARNING: Simulation object /CPU_BC/period was not found in the design.
+WARNING: Simulation object /CPU_BC/EXEdebug was not found in the design.
+WARNING: Simulation object /CPU_BC/debug1 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug2 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug3 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug4 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug5 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug6 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug7 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug8 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug9 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug10 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug11 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug12 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug13 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug14 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug15 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug16 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug17 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug18 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug19 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug20 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug21 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug22 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug23 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug24 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug25 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug26 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug27 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug28 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug29 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug30 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug31 was not found in the design.
+WARNING: Simulation object /CPU_BC/debug32 was not found in the design.
+source MEM_bc.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 3000ns
+Block Memory Generator module MEM_bc.MEM_UNIT.RAM.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MEM_bc_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 3000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1743.160 ; gain = 0.000
+save_wave_config {D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'MEM_bc' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Instructs.coe'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MEM_bc_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DateMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/MEM_bc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_bc
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xelab -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MEM_bc_behav xil_defaultlib.MEM_bc xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MEM_bc_behav xil_defaultlib.MEM_bc xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_ELABORATION...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.DateMEM
+Compiling module xil_defaultlib.MEM_bc
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MEM_bc_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MEM_bc_behav -key {Behavioral:sim_1:Functional:MEM_bc} -tclbatch {MEM_bc.tcl} -view {D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg
+source MEM_bc.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 3000ns
+Block Memory Generator module MEM_bc.MEM_UNIT.RAM.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MEM_bc_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 3000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1743.160 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'MEM_bc' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Instructs.coe'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MEM_bc_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xelab -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MEM_bc_behav xil_defaultlib.MEM_bc xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MEM_bc_behav xil_defaultlib.MEM_bc xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MEM_bc_behav -key {Behavioral:sim_1:Functional:MEM_bc} -tclbatch {MEM_bc.tcl} -view {D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg
+source MEM_bc.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 3000ns
+Block Memory Generator module MEM_bc.MEM_UNIT.RAM.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MEM_bc_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 3000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1743.160 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'MEM_bc' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Instructs.coe'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MEM_bc_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DateMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/MEM_bc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_bc
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xelab -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MEM_bc_behav xil_defaultlib.MEM_bc xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MEM_bc_behav xil_defaultlib.MEM_bc xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_ELABORATION...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.DateMEM
+Compiling module xil_defaultlib.MEM_bc
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MEM_bc_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MEM_bc_behav -key {Behavioral:sim_1:Functional:MEM_bc} -tclbatch {MEM_bc.tcl} -view {D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg
+source MEM_bc.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 3000ns
+Block Memory Generator module MEM_bc.MEM_UNIT.RAM.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MEM_bc_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 3000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1743.160 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'MEM_bc' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Instructs.coe'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MEM_bc_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DateMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/MEM_bc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_bc
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xelab -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MEM_bc_behav xil_defaultlib.MEM_bc xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MEM_bc_behav xil_defaultlib.MEM_bc xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_ELABORATION...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.DateMEM
+Compiling module xil_defaultlib.MEM_bc
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MEM_bc_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MEM_bc_behav -key {Behavioral:sim_1:Functional:MEM_bc} -tclbatch {MEM_bc.tcl} -view {D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg
+source MEM_bc.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 3000ns
+Block Memory Generator module MEM_bc.MEM_UNIT.RAM.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MEM_bc_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 3000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1743.160 ; gain = 0.000
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name dist_mem_gen_1 -dir d:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip
+set_property -dict [list CONFIG.depth {65536} CONFIG.data_width {32} CONFIG.memory_type {single_port_ram}] [get_ips dist_mem_gen_1]
+generate_target {instantiation_template} [get_files d:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dist_mem_gen_1'...
+generate_target all [get_files  d:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dist_mem_gen_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dist_mem_gen_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dist_mem_gen_1'...
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_1] }
+export_ip_user_files -of_objects [get_files d:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci]
+launch_runs -jobs 8 dist_mem_gen_1_synth_1
+[Wed May 24 18:47:56 2023] Launched dist_mem_gen_1_synth_1...
+Run output will be captured here: D:/work-CPU/CPU-PIP/CPU-PIP.runs/dist_mem_gen_1_synth_1/runme.log
+export_simulation -of_objects [get_files d:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci] -directory D:/work-CPU/CPU-PIP/CPU-PIP.ip_user_files/sim_scripts -ip_user_files_dir D:/work-CPU/CPU-PIP/CPU-PIP.ip_user_files -ipstatic_source_dir D:/work-CPU/CPU-PIP/CPU-PIP.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/work-CPU/CPU-PIP/CPU-PIP.cache/compile_simlib/modelsim} {questa=D:/work-CPU/CPU-PIP/CPU-PIP.cache/compile_simlib/questa} {riviera=D:/work-CPU/CPU-PIP/CPU-PIP.cache/compile_simlib/riviera} {activehdl=D:/work-CPU/CPU-PIP/CPU-PIP.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property top CPU_BC [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_BC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Instructs.coe'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_BC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/Branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DateMEM
+INFO: [VRFC 10-2458] undeclared symbol DBwite, assumed default net type wire [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v:47]
+INFO: [VRFC 10-2458] undeclared symbol DBOut, assumed default net type wire [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/EXE_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/IF_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ImmGEN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGEN
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/InsMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/WB_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/CPU_BC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_BC
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xelab -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 3 for port 'branch' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/CPU_BC.v:101]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'funct3' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:91]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'funct7' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:92]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'd' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="v...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.InsMEM
+Compiling module xil_defaultlib.IF_Unit
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.ImmGEN
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ID_Unit
+Compiling module xil_defaultlib.MUX_ALU_SRC_1
+Compiling module xil_defaultlib.MUX_ALU_SRC_2
+Compiling module xil_defaultlib.CMP_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CMP
+Compiling module xil_defaultlib.EXE_Unit
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="v...
+Compiling module xil_defaultlib.dist_mem_gen_1
+Compiling module xil_defaultlib.DateMEM
+Compiling module xil_defaultlib.WB_MUX
+Compiling module xil_defaultlib.CPU_top
+Compiling module xil_defaultlib.CPU_BC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_BC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_BC_behav -key {Behavioral:sim_1:Functional:CPU_BC} -tclbatch {CPU_BC.tcl} -view {D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg
+WARNING: Simulation object /MEM_bc/i was not found in the design.
+WARNING: Simulation object /MEM_bc/Data_W was not found in the design.
+WARNING: Simulation object /MEM_bc/Byte was not found in the design.
+WARNING: Simulation object /MEM_bc/CLK was not found in the design.
+WARNING: Simulation object /MEM_bc/DArr was not found in the design.
+WARNING: Simulation object /MEM_bc/DWrite was not found in the design.
+WARNING: Simulation object /MEM_bc/DataOut was not found in the design.
+WARNING: Simulation object /MEM_bc/period was not found in the design.
+source CPU_BC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 3000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING in CPU_BC.uut.MEM.RAM.inst at time               630000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time               790000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time               850000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              1270000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              1430000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              1490000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              1910000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2070000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2130000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2550000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2710000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2770000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_BC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 3000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1743.160 ; gain = 0.000
+save_wave_config {D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_BC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Instructs.coe'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_BC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/Branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DateMEM
+INFO: [VRFC 10-2458] undeclared symbol DBwite, assumed default net type wire [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v:47]
+INFO: [VRFC 10-2458] undeclared symbol DBOut, assumed default net type wire [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/EXE_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/IF_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ImmGEN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGEN
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/InsMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/WB_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/CPU_BC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_BC
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xelab -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 3 for port 'branch' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/CPU_BC.v:101]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'funct3' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:91]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'funct7' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:92]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'd' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="v...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.InsMEM
+Compiling module xil_defaultlib.IF_Unit
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.ImmGEN
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ID_Unit
+Compiling module xil_defaultlib.MUX_ALU_SRC_1
+Compiling module xil_defaultlib.MUX_ALU_SRC_2
+Compiling module xil_defaultlib.CMP_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CMP
+Compiling module xil_defaultlib.EXE_Unit
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="v...
+Compiling module xil_defaultlib.dist_mem_gen_1
+Compiling module xil_defaultlib.DateMEM
+Compiling module xil_defaultlib.WB_MUX
+Compiling module xil_defaultlib.CPU_top
+Compiling module xil_defaultlib.CPU_BC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_BC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_BC_behav -key {Behavioral:sim_1:Functional:CPU_BC} -tclbatch {CPU_BC.tcl} -view {D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg
+source CPU_BC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 3000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING in CPU_BC.uut.MEM.RAM.inst at time               630000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time               790000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time               850000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              1270000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              1430000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              1490000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              1910000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2070000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2130000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2550000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2710000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2770000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1743.160 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_BC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 3000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1743.160 ; gain = 0.000
+save_wave_config {D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_BC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Instructs.coe'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_BC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/Branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DateMEM
+INFO: [VRFC 10-2458] undeclared symbol DBwite, assumed default net type wire [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v:47]
+INFO: [VRFC 10-2458] undeclared symbol DBOut, assumed default net type wire [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/EXE_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/IF_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ImmGEN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGEN
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/InsMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/WB_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/CPU_BC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_BC
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xelab -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 3 for port 'branch' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/CPU_BC.v:101]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'funct3' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:91]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'funct7' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:92]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'd' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="v...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.InsMEM
+Compiling module xil_defaultlib.IF_Unit
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.ImmGEN
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ID_Unit
+Compiling module xil_defaultlib.MUX_ALU_SRC_1
+Compiling module xil_defaultlib.MUX_ALU_SRC_2
+Compiling module xil_defaultlib.CMP_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CMP
+Compiling module xil_defaultlib.EXE_Unit
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="v...
+Compiling module xil_defaultlib.dist_mem_gen_1
+Compiling module xil_defaultlib.DateMEM
+Compiling module xil_defaultlib.WB_MUX
+Compiling module xil_defaultlib.CPU_top
+Compiling module xil_defaultlib.CPU_BC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_BC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_BC_behav -key {Behavioral:sim_1:Functional:CPU_BC} -tclbatch {CPU_BC.tcl} -view {D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg
+source CPU_BC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 3000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING in CPU_BC.uut.MEM.RAM.inst at time               630000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time               790000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time               850000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              1270000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              1430000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              1490000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              1910000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2070000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2130000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2550000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2710000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2770000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2207.387 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_BC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 3000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2207.387 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_BC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Instructs.coe'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_BC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/Branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DateMEM
+INFO: [VRFC 10-2458] undeclared symbol DBWite, assumed default net type wire [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/EXE_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/IF_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ImmGEN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGEN
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/InsMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/WB_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/CPU_BC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_BC
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xelab -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 3 for port 'branch' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/CPU_BC.v:101]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'funct3' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:91]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'funct7' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:92]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'd' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="v...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.InsMEM
+Compiling module xil_defaultlib.IF_Unit
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.ImmGEN
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ID_Unit
+Compiling module xil_defaultlib.MUX_ALU_SRC_1
+Compiling module xil_defaultlib.MUX_ALU_SRC_2
+Compiling module xil_defaultlib.CMP_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CMP
+Compiling module xil_defaultlib.EXE_Unit
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="v...
+Compiling module xil_defaultlib.dist_mem_gen_1
+Compiling module xil_defaultlib.DateMEM
+Compiling module xil_defaultlib.WB_MUX
+Compiling module xil_defaultlib.CPU_top
+Compiling module xil_defaultlib.CPU_BC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_BC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_BC_behav -key {Behavioral:sim_1:Functional:CPU_BC} -tclbatch {CPU_BC.tcl} -view {D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg
+source CPU_BC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 3000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING in CPU_BC.uut.MEM.RAM.inst at time               630000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time               790000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time               850000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              1270000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              1430000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              1490000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              1910000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2070000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2130000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2550000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2710000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+WARNING in CPU_BC.uut.MEM.RAM.inst at time              2770000 ns: 
+Reading from out-of-range address. Max address in CPU_BC.uut.MEM.RAM.inst is       65535
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2207.387 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_BC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 3000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2207.387 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_BC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Instructs.coe'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_BC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/Branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DateMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/EXE_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/IF_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ImmGEN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGEN
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/InsMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/WB_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/CPU_BC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_BC
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xelab -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 3 for port 'branch' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/CPU_BC.v:101]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'funct3' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:91]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'funct7' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:92]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="v...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.InsMEM
+Compiling module xil_defaultlib.IF_Unit
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.ImmGEN
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ID_Unit
+Compiling module xil_defaultlib.MUX_ALU_SRC_1
+Compiling module xil_defaultlib.MUX_ALU_SRC_2
+Compiling module xil_defaultlib.CMP_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CMP
+Compiling module xil_defaultlib.EXE_Unit
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="v...
+Compiling module xil_defaultlib.dist_mem_gen_1
+Compiling module xil_defaultlib.DateMEM
+Compiling module xil_defaultlib.WB_MUX
+Compiling module xil_defaultlib.CPU_top
+Compiling module xil_defaultlib.CPU_BC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_BC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_BC_behav -key {Behavioral:sim_1:Functional:CPU_BC} -tclbatch {CPU_BC.tcl} -view {D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg
+source CPU_BC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 3000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2551.875 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_BC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 3000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2551.875 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_BC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Instructs.coe'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_BC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/Branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DateMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/EXE_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/IF_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ImmGEN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGEN
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/InsMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/WB_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/CPU_BC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_BC
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xelab -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 3 for port 'branch' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/CPU_BC.v:101]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'funct3' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:91]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'funct7' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:92]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="v...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.InsMEM
+Compiling module xil_defaultlib.IF_Unit
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.ImmGEN
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ID_Unit
+Compiling module xil_defaultlib.MUX_ALU_SRC_1
+Compiling module xil_defaultlib.MUX_ALU_SRC_2
+Compiling module xil_defaultlib.CMP_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CMP
+Compiling module xil_defaultlib.EXE_Unit
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="v...
+Compiling module xil_defaultlib.dist_mem_gen_1
+Compiling module xil_defaultlib.DateMEM
+Compiling module xil_defaultlib.WB_MUX
+Compiling module xil_defaultlib.CPU_top
+Compiling module xil_defaultlib.CPU_BC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_BC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_BC_behav -key {Behavioral:sim_1:Functional:CPU_BC} -tclbatch {CPU_BC.tcl} -view {D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg
+source CPU_BC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 3000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2551.875 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_BC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 3000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2551.875 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\IF_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\PC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\Branch.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\CPU_BC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\CPU_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\branch_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\ControlUnit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\DateMEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\MEM_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\InsMEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\ALU_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\IF_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\PC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\Branch.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\CPU_BC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\CPU_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\branch_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\ControlUnit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\DateMEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\MEM_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\InsMEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\ALU_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\IF_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\PC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\Branch.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\CPU_BC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\CPU_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\branch_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\ControlUnit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\DateMEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\MEM_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\InsMEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\ALU_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\IF_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\PC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\Branch.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\CPU_BC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\CPU_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\branch_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\ControlUnit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\DateMEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\MEM_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\InsMEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\ALU_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\IF_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\PC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\Branch.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\CPU_BC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\CPU_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\branch_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\ControlUnit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\DateMEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\MEM_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\InsMEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\ALU_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\IF_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\PC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\Branch.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\CPU_BC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\CPU_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\branch_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\ControlUnit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\DateMEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\MEM_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\InsMEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\ALU_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\IF_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\PC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\Branch.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\CPU_BC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\CPU_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\branch_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\ControlUnit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\DateMEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\MEM_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\InsMEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\ALU_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\IF_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\PC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\Branch.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\CPU_BC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\CPU_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\branch_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\ControlUnit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\DateMEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\MEM_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\InsMEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\ALU_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\IF_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\PC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\Branch.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\CPU_BC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\CPU_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\branch_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\ControlUnit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\DateMEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\MEM_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\InsMEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sim_1\new\ALU_bc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\work-CPU\CPU-PIP\CPU-PIP.srcs\sources_1\new\IF_Unit.v:]
+INFO: [Common 17-14] Message 'filemgmt 56-199' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+ERROR: [Common 17-180] Spawn failed: No error
+set_property -name {xsim.simulate.runtime} -value {10000ns} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_BC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Instructs.coe'
+INFO: [SIM-utils-43] Exported 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim/Ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_BC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/Branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DateMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/EXE_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/IF_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ImmGEN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGEN
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/InsMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_ALU_SRC_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/WB_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/CPU_BC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_BC
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+"xelab -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 805693a2b4ce495f979f8832e1effcb1 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_BC_behav xil_defaultlib.CPU_BC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 3 for port 'branch' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sim_1/new/CPU_BC.v:101]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'funct3' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:91]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'funct7' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:92]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="v...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.InsMEM
+Compiling module xil_defaultlib.IF_Unit
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.ImmGEN
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ID_Unit
+Compiling module xil_defaultlib.MUX_ALU_SRC_1
+Compiling module xil_defaultlib.MUX_ALU_SRC_2
+Compiling module xil_defaultlib.CMP_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CMP
+Compiling module xil_defaultlib.EXE_Unit
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="v...
+Compiling module xil_defaultlib.dist_mem_gen_1
+Compiling module xil_defaultlib.DateMEM
+Compiling module xil_defaultlib.WB_MUX
+Compiling module xil_defaultlib.CPU_top
+Compiling module xil_defaultlib.CPU_BC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_BC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/work-CPU/CPU-PIP/CPU-PIP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_BC_behav -key {Behavioral:sim_1:Functional:CPU_BC} -tclbatch {CPU_BC.tcl} -view {D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/work-CPU/CPU-PIP/CPU_BC_behav.wcfg
+source CPU_BC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2551.875 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_BC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2551.875 ; gain = 0.000

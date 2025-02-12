@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../CPU-PIP.srcs/sources_1/new" \
+"../../../../CPU-PIP.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" \
+"../../../../CPU-PIP.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" \
+"../../../../CPU-PIP.srcs/sources_1/new/ALU.v" \
+"../../../../CPU-PIP.srcs/sources_1/new/Branch.v" \
+"../../../../CPU-PIP.srcs/sources_1/new/CMP.v" \
+"../../../../CPU-PIP.srcs/sources_1/new/CMP_MUX.v" \
+"../../../../CPU-PIP.srcs/sources_1/new/ControlUnit.v" \
+"../../../../CPU-PIP.srcs/sources_1/new/DateMEM.v" \
+"../../../../CPU-PIP.srcs/sources_1/new/EXE_Unit.v" \
+"../../../../CPU-PIP.srcs/sources_1/new/ID_Unit.v" \
+"../../../../CPU-PIP.srcs/sources_1/new/IF_Unit.v" \
+"../../../../CPU-PIP.srcs/sources_1/new/ImmGEN.v" \
+"../../../../CPU-PIP.srcs/sources_1/new/InsMEM.v" \
+"../../../../CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC1.v" \
+"../../../../CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC_2.v" \
+"../../../../CPU-PIP.srcs/sources_1/new/PC.v" \
+"../../../../CPU-PIP.srcs/sources_1/new/RegFile.v" \
+"../../../../CPU-PIP.srcs/sources_1/new/WB_MUX.v" \
+"../../../../CPU-PIP.srcs/sources_1/new/CPU_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

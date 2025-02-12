@@ -1,0 +1,553 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May 24 20:42:04 2023
+# Process ID: 18912
+# Current directory: D:/work-CPU/CPU-PIP/CPU-PIP.runs/synth_1
+# Command line: vivado.exe -log CPU_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU_top.tcl
+# Log file: D:/work-CPU/CPU-PIP/CPU-PIP.runs/synth_1/CPU_top.vds
+# Journal file: D:/work-CPU/CPU-PIP/CPU-PIP.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source CPU_top.tcl -notrace
+Command: synth_design -top CPU_top -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14544 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1132.793 ; gain = 233.785
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CPU_top' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IF_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/IF_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Branch' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/Branch.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Branch' (1#1) [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/Branch.v:24]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/PC.v:25]
+INFO: [Synth 8-226] default block is never used [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/PC.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (2#1) [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/PC.v:25]
+INFO: [Synth 8-6157] synthesizing module 'InsMEM' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/InsMEM.v:24]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [D:/work-CPU/CPU-PIP/CPU-PIP.runs/synth_1/.Xil/Vivado-18912-WIN-H1D0LU70QKR/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (3#1) [D:/work-CPU/CPU-PIP/CPU-PIP.runs/synth_1/.Xil/Vivado-18912-WIN-H1D0LU70QKR/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'InsMEM' (4#1) [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/InsMEM.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'IF_Unit' (5#1) [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/IF_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ControlUnit.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (6#1) [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ControlUnit.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ImmGEN' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ImmGEN.v:24]
+WARNING: [Synth 8-567] referenced signal 'U_imm' should be on the sensitivity list [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ImmGEN.v:42]
+WARNING: [Synth 8-567] referenced signal 'J_imm' should be on the sensitivity list [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ImmGEN.v:42]
+WARNING: [Synth 8-567] referenced signal 'I_imm' should be on the sensitivity list [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ImmGEN.v:42]
+WARNING: [Synth 8-567] referenced signal 'B_imm' should be on the sensitivity list [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ImmGEN.v:42]
+WARNING: [Synth 8-567] referenced signal 'S_imm' should be on the sensitivity list [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ImmGEN.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'ImmGEN' (7#1) [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ImmGEN.v:24]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/RegFile.v:23]
+WARNING: [Synth 8-6090] variable 'x' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/RegFile.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (8#1) [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/RegFile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ID_Unit' (9#1) [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ID_Unit.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'debug1' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:111]
+WARNING: [Synth 8-689] width (1) of port connection 'debug2' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:112]
+WARNING: [Synth 8-689] width (1) of port connection 'debug3' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:113]
+WARNING: [Synth 8-689] width (1) of port connection 'debug4' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:114]
+WARNING: [Synth 8-689] width (1) of port connection 'debug5' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:115]
+WARNING: [Synth 8-689] width (1) of port connection 'debug6' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:116]
+WARNING: [Synth 8-689] width (1) of port connection 'debug7' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:117]
+WARNING: [Synth 8-689] width (1) of port connection 'debug8' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:118]
+WARNING: [Synth 8-689] width (1) of port connection 'debug9' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:119]
+WARNING: [Synth 8-689] width (1) of port connection 'debug10' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:120]
+WARNING: [Synth 8-689] width (1) of port connection 'debug11' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:121]
+WARNING: [Synth 8-689] width (1) of port connection 'debug12' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:122]
+WARNING: [Synth 8-689] width (1) of port connection 'debug13' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:123]
+WARNING: [Synth 8-689] width (1) of port connection 'debug14' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:124]
+WARNING: [Synth 8-689] width (1) of port connection 'debug15' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:125]
+WARNING: [Synth 8-689] width (1) of port connection 'debug16' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:126]
+WARNING: [Synth 8-689] width (1) of port connection 'debug17' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:127]
+WARNING: [Synth 8-689] width (1) of port connection 'debug18' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:128]
+WARNING: [Synth 8-689] width (1) of port connection 'debug19' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:129]
+WARNING: [Synth 8-689] width (1) of port connection 'debug20' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:130]
+WARNING: [Synth 8-689] width (1) of port connection 'debug21' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:131]
+WARNING: [Synth 8-689] width (1) of port connection 'debug22' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:132]
+WARNING: [Synth 8-689] width (1) of port connection 'debug23' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:133]
+WARNING: [Synth 8-689] width (1) of port connection 'debug24' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:134]
+WARNING: [Synth 8-689] width (1) of port connection 'debug25' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:135]
+WARNING: [Synth 8-689] width (1) of port connection 'debug26' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:136]
+WARNING: [Synth 8-689] width (1) of port connection 'debug27' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:137]
+WARNING: [Synth 8-689] width (1) of port connection 'debug28' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:138]
+WARNING: [Synth 8-689] width (1) of port connection 'debug29' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:139]
+WARNING: [Synth 8-689] width (1) of port connection 'debug30' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:140]
+WARNING: [Synth 8-689] width (1) of port connection 'debug31' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:141]
+WARNING: [Synth 8-689] width (1) of port connection 'debug32' does not match port width (32) of module 'ID_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:142]
+INFO: [Synth 8-6157] synthesizing module 'EXE_Unit' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/EXE_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX_ALU_SRC_1' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX_ALU_SRC_1' (10#1) [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX_ALU_SRC_2' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX_ALU_SRC_2' (11#1) [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/MUX_ALU_SRC_2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CMP_MUX' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP_MUX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CMP_MUX' (12#1) [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP_MUX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ALU.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (13#1) [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ALU.v:25]
+INFO: [Synth 8-6157] synthesizing module 'CMP' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'CMP' (14#1) [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CMP.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'EXE_Unit' (15#1) [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/EXE_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DateMEM' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_1' [D:/work-CPU/CPU-PIP/CPU-PIP.runs/synth_1/.Xil/Vivado-18912-WIN-H1D0LU70QKR/realtime/dist_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_1' (16#1) [D:/work-CPU/CPU-PIP/CPU-PIP.runs/synth_1/.Xil/Vivado-18912-WIN-H1D0LU70QKR/realtime/dist_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DateMEM' (17#1) [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/DateMEM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'WB_MUX' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/WB_MUX.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'WB_MUX' (18#1) [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/WB_MUX.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_top' (19#1) [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/CPU_top.v:23]
+WARNING: [Synth 8-3331] design DateMEM has unconnected port DArr[31]
+WARNING: [Synth 8-3331] design DateMEM has unconnected port DArr[30]
+WARNING: [Synth 8-3331] design DateMEM has unconnected port DArr[29]
+WARNING: [Synth 8-3331] design DateMEM has unconnected port DArr[28]
+WARNING: [Synth 8-3331] design DateMEM has unconnected port DArr[27]
+WARNING: [Synth 8-3331] design DateMEM has unconnected port DArr[26]
+WARNING: [Synth 8-3331] design DateMEM has unconnected port DArr[25]
+WARNING: [Synth 8-3331] design DateMEM has unconnected port DArr[24]
+WARNING: [Synth 8-3331] design DateMEM has unconnected port DArr[23]
+WARNING: [Synth 8-3331] design DateMEM has unconnected port DArr[22]
+WARNING: [Synth 8-3331] design DateMEM has unconnected port DArr[21]
+WARNING: [Synth 8-3331] design DateMEM has unconnected port DArr[20]
+WARNING: [Synth 8-3331] design DateMEM has unconnected port DArr[19]
+WARNING: [Synth 8-3331] design DateMEM has unconnected port DArr[18]
+WARNING: [Synth 8-3331] design DateMEM has unconnected port DArr[1]
+WARNING: [Synth 8-3331] design DateMEM has unconnected port DArr[0]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[31]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[30]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[29]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[28]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[27]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[26]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[25]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[24]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[23]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[22]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[21]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[20]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[19]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[18]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[17]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[16]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[15]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[14]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[13]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[12]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[1]
+WARNING: [Synth 8-3331] design InsMEM has unconnected port PC[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1204.848 ; gain = 305.840
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1204.848 ; gain = 305.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1204.848 ; gain = 305.840
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1204.848 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'IF/InsMEM_Unit/ROM'
+Finished Parsing XDC File [d:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'IF/InsMEM_Unit/ROM'
+Parsing XDC File [d:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1/dist_mem_gen_1_in_context.xdc] for cell 'MEM/RAM'
+Finished Parsing XDC File [d:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1/dist_mem_gen_1_in_context.xdc] for cell 'MEM/RAM'
+Parsing XDC File [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/constrs_1/new/Test.xdc]
+Finished Parsing XDC File [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/constrs_1/new/Test.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1325.242 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 1325.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1325.242 ; gain = 426.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1325.242 ; gain = 426.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for IF/InsMEM_Unit/ROM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MEM/RAM. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1325.242 ; gain = 426.234
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'imm_reg' [D:/work-CPU/CPU-PIP/CPU-PIP.srcs/sources_1/new/ImmGEN.v:48]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1325.242 ; gain = 426.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 66    
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 9     
+	   6 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 4     
+	   8 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 35    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Branch 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input      1 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 4     
+	   8 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module ImmGEN 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+Module RegFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 64    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 31    
+Module MUX_ALU_SRC_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX_ALU_SRC_2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module CMP_MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module CMP 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module DateMEM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 2     
+Module WB_MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[31] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[30] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[29] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[28] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[27] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[26] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[25] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[24] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[23] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[22] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[21] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[20] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[19] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[18] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[17] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[16] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[15] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[14] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[13] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[12] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[11] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[10] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[9] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[8] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[7] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[6] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[5] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[4] driven by constant 0
+WARNING: [Synth 8-3917] design CPU_top has port EXEdebug[3] driven by constant 0
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[31]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[30]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[29]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[28]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[27]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[26]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[25]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[24]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[23]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[22]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[21]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[20]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[19]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[18]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[17]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[16]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[15]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[14]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[13]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[12]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[11]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[10]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[9]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[8]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[7]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[6]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[5]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[4]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[3]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[2]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[1]) is unused and will be removed from module CPU_top.
+WARNING: [Synth 8-3332] Sequential element (ID/ImmGEN_Unit/imm_reg[0]) is unused and will be removed from module CPU_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1374.535 ; gain = 475.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:45 ; elapsed = 00:01:48 . Memory (MB): peak = 1374.535 ; gain = 475.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:38 ; elapsed = 00:02:41 . Memory (MB): peak = 1562.328 ; gain = 663.320
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:39 ; elapsed = 00:02:42 . Memory (MB): peak = 1562.328 ; gain = 663.320
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:42 ; elapsed = 00:02:45 . Memory (MB): peak = 1562.328 ; gain = 663.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:42 ; elapsed = 00:02:45 . Memory (MB): peak = 1562.328 ; gain = 663.320
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:42 ; elapsed = 00:02:45 . Memory (MB): peak = 1562.328 ; gain = 663.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:42 ; elapsed = 00:02:45 . Memory (MB): peak = 1562.328 ; gain = 663.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:42 ; elapsed = 00:02:45 . Memory (MB): peak = 1562.328 ; gain = 663.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:42 ; elapsed = 00:02:45 . Memory (MB): peak = 1562.328 ; gain = 663.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dist_mem_gen_0 |         1|
+|2     |dist_mem_gen_1 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |dist_mem_gen_0 |     1|
+|2     |dist_mem_gen_1 |     1|
+|3     |BUFG           |     1|
+|4     |CARRY4         |    23|
+|5     |LUT1           |     3|
+|6     |LUT2           |    27|
+|7     |LUT3           |   187|
+|8     |LUT4           |    80|
+|9     |LUT5           |   255|
+|10    |LUT6           |   924|
+|11    |MUXF7          |   283|
+|12    |MUXF8          |    68|
+|13    |FDCE           |    32|
+|14    |FDRE           |  1056|
+|15    |IBUF           |     2|
+|16    |OBUF           |   372|
++------+---------------+------+
+
+Report Instance Areas: 
++------+----------------+---------+------+
+|      |Instance        |Module   |Cells |
++------+----------------+---------+------+
+|1     |top             |         |  3377|
+|2     |  EXE           |EXE_Unit |    15|
+|3     |    ALU_Unit    |ALU      |     8|
+|4     |    CMP_Unit    |CMP      |     7|
+|5     |  ID            |ID_Unit  |  1949|
+|6     |    RegFiles    |RegFile  |  1949|
+|7     |  IF            |IF_Unit  |  1006|
+|8     |    InsMEM_Unit |InsMEM   |   932|
+|9     |    PC_Unit     |PC       |    74|
+|10    |  MEM           |DateMEM  |    32|
++------+----------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:42 ; elapsed = 00:02:45 . Memory (MB): peak = 1562.328 ; gain = 663.320
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 62 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:35 ; elapsed = 00:02:41 . Memory (MB): peak = 1562.328 ; gain = 542.926
+Synthesis Optimization Complete : Time (s): cpu = 00:02:42 ; elapsed = 00:02:46 . Memory (MB): peak = 1562.328 ; gain = 663.320
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1562.328 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 374 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1562.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 138 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:51 ; elapsed = 00:02:56 . Memory (MB): peak = 1562.328 ; gain = 1106.293
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1562.328 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/work-CPU/CPU-PIP/CPU-PIP.runs/synth_1/CPU_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CPU_top_utilization_synth.rpt -pb CPU_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 24 20:45:15 2023...
